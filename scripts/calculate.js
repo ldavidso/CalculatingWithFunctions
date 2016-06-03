@@ -1,6 +1,12 @@
 
 function zero() {}
-function one() {}
+function one(fn) {
+    if(fn) {
+        return fn.call(fn,1);
+    } else {
+        return 1;
+    }
+}
 function two() {}
 function three() {}
 function four(fn) {

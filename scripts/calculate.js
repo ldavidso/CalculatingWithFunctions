@@ -1,10 +1,6 @@
 
 function proc(n, fn) {
-    if(fn) {
-        return fn.call(fn, n)
-    } else {
-        return n;
-    }
+    return (fn) ? fn.call(fn, n) : n;
 }
 
 function zero(fn)  { return proc(0, fn); }

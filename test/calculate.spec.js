@@ -1,6 +1,6 @@
-describe('dummy Test', function() {
-    it("contains spec with an expectation", function() {
-        var r = 1;
-        expect(r).toEqual(1);
+describe('Addition Tests', function() {
+    it("Spec expects four(plus(nine())) to return 13", function() {
+        var r = four(plus(nine()));
+        expect(r).toEqual(13);
     });
 });

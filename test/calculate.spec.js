@@ -36,4 +36,8 @@ describe('Division Tests', function() {
         var r = six(dividedBy(two()));
         expect(r).toEqual(3);
     });
+    it("Spec check division same digits expects two(dividedBy(two())) to return 1", function() {
+        var r = two(dividedBy(two()));
+        expect(r).toEqual(1);
+    });
 });

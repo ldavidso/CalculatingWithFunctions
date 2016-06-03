@@ -7,19 +7,33 @@ function proc(n, fn) {
     }
 }
 
-function zero() {}
+function zero(fn) {
+    return proc(0, fn);
+}
 function one(fn) {
     return proc(1, fn);
 }
-function two() {}
-function three() {}
+function two(fn) {
+    return proc(2, fn);
+}
+function three(fn) {
+    return proc(3, fn);
+}
 function four(fn) {
     return proc(4, fn);
 }
-function five() {}
-function six() {}
-function seven() {}
-function eight() {}
+function five(fn) {
+    return proc(5, fn);
+}
+function six(fn) {
+    return proc(6, fn);
+}
+function seven(fn) {
+    return proc(7, fn);
+}
+function eight(fn) {
+    return proc(8, fn);
+}
 function nine(fn) {
     return proc(9, fn);
 }

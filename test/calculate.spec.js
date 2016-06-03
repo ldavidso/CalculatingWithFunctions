@@ -29,6 +29,10 @@ describe('Multiplication Tests', function() {
         var r = seven(times(five()));
         expect(r).toEqual(35);
     });
+    it("Spec check multiplying by zero expects seven(times(zero())) to return 0", function() {
+        var r = seven(times(zero()));
+        expect(r).toEqual(0);
+    });
 });
 
 describe('Division Tests', function() {

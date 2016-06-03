@@ -23,3 +23,17 @@ describe('Subtraction Tests', function() {
         expect(r).toEqual(-1);
     });
 });
+
+describe('Multiplication Tests', function() {
+    it("Spec check multiplying different digits expects seven(times(five())) to return 35", function() {
+        var r = seven(times(five()));
+        expect(r).toEqual(35);
+    });
+});
+
+describe('Division Tests', function() {
+    it("Spec check division different digits expects six(dividedBy(two())) to return 3", function() {
+        var r = six(dividedBy(two()));
+        expect(r).toEqual(3);
+    });
+});

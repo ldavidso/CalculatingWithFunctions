@@ -48,5 +48,13 @@ function minus(num) {
         return res - num;
     }
 }
-function times() {}
-function dividedBy() {}
+function times(num) {
+    return function(res) {
+        return res * num;
+    }
+}
+function dividedBy(num) {
+    return function(res) {
+        return res / num;
+    }
+}

@@ -40,4 +40,8 @@ describe('Division Tests', function() {
         var r = two(dividedBy(two()));
         expect(r).toEqual(1);
     });
+    it("Spec check division for fractional numbers expects one(dividedBy(two())) to return .5", function() {
+        var r = one(dividedBy(two()));
+        expect(r).toEqual(.5);
+    });
 });

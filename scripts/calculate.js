@@ -1,31 +1,27 @@
 
+function proc(n, fn) {
+    if(fn) {
+        return fn.call(fn, n)
+    } else {
+        return n;
+    }
+}
+
 function zero() {}
 function one(fn) {
-    if(fn) {
-        return fn.call(fn,1);
-    } else {
-        return 1;
-    }
+    return proc(1, fn);
 }
 function two() {}
 function three() {}
 function four(fn) {
-    if(fn) {
-        return fn.call(fn,4);
-    } else {
-        return 4;
-    }
+    return proc(4, fn);
 }
 function five() {}
 function six() {}
 function seven() {}
 function eight() {}
 function nine(fn) {
-    if(fn) {
-        return fn.call(fn,9);
-    }else{
-        return 9;
-    }
+    return proc(9, fn);
 }
 
 function plus(num) {

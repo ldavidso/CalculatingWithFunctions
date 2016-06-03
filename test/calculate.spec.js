@@ -8,3 +8,10 @@ describe('Addition Tests', function() {
         expect(r).toEqual(2);
     });
 });
+
+describe('Subtraction Tests', function() {
+    it("Spec check subtraction different digits expects eight(minus(three())) to return 5", function() {
+        var r = eight(minus(three()));
+        expect(r).toEqual(5);
+    });
+});

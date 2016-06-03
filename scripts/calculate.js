@@ -43,6 +43,10 @@ function plus(num) {
         return res + num;
     }
 }
-function minus() {}
+function minus(num) {
+    return function(res) {
+        return res - num;
+    }
+}
 function times() {}
 function dividedBy() {}

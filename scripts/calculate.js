@@ -39,22 +39,14 @@ function nine(fn) {
 }
 
 function plus(num) {
-    return function(res) {
-        return res + num;
-    }
+    return function(res) { return res + num; }
 }
 function minus(num) {
-    return function(res) {
-        return res - num;
-    }
+    return function(res) { return res - num; }
 }
 function times(num) {
-    return function(res) {
-        return res * num;
-    }
+    return function(res) { return res * num; }
 }
 function dividedBy(num) {
-    return function(res) {
-        return res / num;
-    }
+    return function(res) { return res / num; }
 }

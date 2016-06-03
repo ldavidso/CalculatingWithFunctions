@@ -14,8 +14,12 @@ describe('Subtraction Tests', function() {
         var r = eight(minus(three()));
         expect(r).toEqual(5);
     });
-    it("Spec check subtraction different digits expects one(minus(one())) to return 0", function() {
+    it("Spec check subtraction same digits expects one(minus(one())) to return 0", function() {
         var r = one(minus(one()));
         expect(r).toEqual(0);
+    });
+    it("Spec check subtraction for negative numbers expects one(minus(two())) to return -1", function() {
+        var r = one(minus(two()));
+        expect(r).toEqual(-1);
     });
 });
